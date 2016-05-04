@@ -6,7 +6,7 @@
     <class name="hibernate.Student" table="STUDENT">
         <id name="sid" type="int">
             <column name="SID" />
-            <generator class="assigned" />
+            <generator class="native" /><!--assigned,native--> 
         </id>
         <property name="name" type="java.lang.String">
             <column name="NAME" />
@@ -14,7 +14,7 @@
         <property name="gender" type="java.lang.String">
             <column name="GENDER" />
         </property>
-        <property name="birthday" type="java.util.Date">
+        <property name="birthday" type="date"> <!--hibernate type: data/time/timestamp/calendar -->
             <column name="BIRTHDAY" />
         </property>
         <property name="address" type="java.lang.String">

@@ -9,6 +9,11 @@ public class Student {
 	private Date birthday;
 	private String address;
 
+	public Student()
+	{
+		
+	}
+	
 	public Student(int sid, String name, String gender, Date birthday, String address) {
 		//super();
 		this.sid = sid;
